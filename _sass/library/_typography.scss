@@ -16,7 +16,7 @@ body {
   color: $color-text-regular;
 }
 
-h3 {
+h1 {
   @include title-face;
   font-size: 1rem;
   position: relative;
