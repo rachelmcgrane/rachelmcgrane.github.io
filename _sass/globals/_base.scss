@@ -19,13 +19,3 @@
     padding-top: 100px;
   }
 }
-
-a {
-  color: $color-text-dark;
-
-  &:hover {
-    background-color: $color-text-dark;
-    color: $color-white;
-    text-decoration: none;
-  }
-}
