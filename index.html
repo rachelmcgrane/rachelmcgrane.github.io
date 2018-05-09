@@ -1,0 +1,75 @@
+---
+layout: default
+---
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+<div class="intro">
+  <div class="intro__geometry">
+    <img src="/assets/images/shapes.svg" alt="">
+  </div>
+
+  <p class="intro__text">
+    Hey there, I’m Rachel! I’m a Pittsburgh-based interaction designer with a love for making things accessible for everyone.
+  </p>
+</div>
+
+<div class="projects-list">
+  <h3 class="section__heading">Case Studies</h3>
+
+  <div class="projects">
+    <div class="project">
+      <div class="project__title">
+        <h2>GoraList</h2>
+        <time datetime="2018-3" class="project__description">March 2018</time>
+      </div>
+
+      <div class="project__preview-image project__goralist">
+      </div>
+    </div>
+
+
+    <div class="project">
+      <div class="project__title">
+        <h2>FOREVER Design Challenge</h2>
+        <time datetime="2018-3" class="project__description">July 2017</time>
+      </div>
+
+      <div class="project__preview-image project__forever">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="projects-list">
+  <h3 class="section__heading">Gallery</h3>
+
+  <div class="projects">
+    <div class="project">
+      <div class="project__preview-image project__goralist">
+      </div>
+    </div>
+
+
+    <div class="project">
+      <div class="project__preview-image project__forever">
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project__preview-image project__forever">
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>Made with &lt;3 from the 'Burgh</p>
+</footer>

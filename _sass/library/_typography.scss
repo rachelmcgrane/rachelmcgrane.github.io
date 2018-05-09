@@ -1,0 +1,71 @@
+$line-height: 1.8;
+
+@mixin title-face {
+  font-family: 'TTNorms', sans-serif;
+}
+
+@mixin body-face {
+  font-family: 'ff-tisa-web-pro', serif;
+}
+
+body {
+  @include body-face;
+  font-size: 15px;
+  line-height: $line-height;
+  margin: 0;
+  color: $color-text-regular;
+}
+
+h1 {
+  @include title-face;
+  font-size: 1.414rem;
+  position: relative;
+  color: #1a1a1a;
+  font-weight: normal;
+  line-height: 1.2;
+
+  @include breakpoint(1050px) {
+    font-size: 1.625rem;
+  }
+}
+
+h2 {
+  font-size: 1.125rem;
+  position: relative;
+  color: #1a1a1a;
+
+  @include breakpoint(1050px) {
+    font-size: 1.414rem;
+  }
+}
+
+h3 {
+  @include title-face;
+  font-size: 1rem;
+  position: relative;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: normal;
+
+  @include breakpoint(1050px) {
+    font-size: 1.125rem;
+  }
+}
+
+.section__heading {
+  @include title-face;
+  font-size: 1.414rem;
+  position: relative;
+  color: #1a1a1a;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  text-transform: none;
+  letter-spacing: normal;
+
+  @include breakpoint(1050px) {
+    font-size: 1.625rem;
+  }
+}
