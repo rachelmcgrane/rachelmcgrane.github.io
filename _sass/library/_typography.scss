@@ -16,3 +16,13 @@ body {
   margin: 0;
   color: $color-text-regular;
 }
+
+h3 {
+  @include title-face;
+  font-size: 1rem;
+  position: relative;
+  color: $color-text-dark;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
