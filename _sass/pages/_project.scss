@@ -1,0 +1,42 @@
+.project-content {
+  margin: 56px 0;
+
+  @media screen and (max-width: 600px) {
+    margin: 40px 0;
+  }
+}
+
+.project-content__header {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-bottom: 32px;
+}
+
+.project-content__heading {
+  grid-column: span 4;
+}
+
+.project-shots {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+
+  .project-shot {
+    border: 16px solid var(--yellow);
+    border-radius: 40px;
+    grid-column: span 1;
+
+    @media screen and (max-width: 600px) {
+      border-width: 8px;
+      border-radius: 24px;
+    }
+  }
+
+  .project-shot--hero {
+    grid-column: span 2;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}

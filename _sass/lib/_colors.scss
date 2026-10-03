@@ -1,0 +1,23 @@
+:root {
+  --background: light-dark(#fff, #151515);
+
+  --gray-100: light-dark(#F0F0F0, #303030);
+  --gray-300: light-dark(#cccccc, #3a3a3a);
+  --gray-500: light-dark(#939393, #828282);
+  --gray-800: light-dark(#474747, #A2A2A2);
+
+  --focus-blue: light-dark(#2C7E9F, #2E89AD);
+  --focus-blue-light: light-dark(#93D1EB, #10465B);
+
+  --yellow: light-dark(#FFC34A, #977229);
+  --yellow-hover: light-dark(#EDA923, #B9903F);
+  --title-orange: light-dark(#E97000, #A75100);
+  --green-background: light-dark(#CBF5E8, #1E2F26);
+  --green-text: light-dark(#47947C, #4B8774);
+  --yellow-background: light-dark(#FFD27E, #49330A);
+  --yellow-background-hover: light-dark(#FFCD6F, #52390B);
+  --yellow-text: light-dark(#7A5818, #D59A2F);
+  --purple-text-hover: light-dark(#461A9D, #CBB7F3);
+  --purple-background: light-dark(#E7DBFF, #3C3054);
+  --purple-text: light-dark(#743EDF, #AF9CD5);
+}

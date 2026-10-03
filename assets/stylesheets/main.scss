@@ -1,12 +1,20 @@
 ---
 ---
+@use "lib/colors";
+@use "lib/defaults";
+@use "lib/typography";
 
-@import "library/tt-norms";
-@import "library/breakpoints";
-@import "library/colors";
-@import "library/typography";
+@use "components/project-card";
+@use "components/form-field";
+@use "components/button";
 
-@import "globals/base";
+@use "blocks/site-header";
+@use "blocks/projects";
+@use "blocks/site-footer";
+@use "blocks/page-content";
+@use "blocks/form";
 
-@import "modules/intro";
-@import "modules/find";
+@use "pages/home";
+@use "pages/about";
+@use "pages/contact";
+@use "pages/project";

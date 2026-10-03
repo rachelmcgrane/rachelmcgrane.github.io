@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Rodger";
+  src: url("/assets/fonts/Rodger-Black.woff2");
+}
+
+@font-face {
+  font-family: "Proxima Soft";
+  src: url("/assets/fonts/ProximaSoft-Regular.woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Proxima Soft";
+  src: url("/assets/fonts/ProximaSoft-SemiBold.woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Proxima Soft";
+  src: url("/assets/fonts/ProximaSoft-Bold.woff2");
+  font-weight: 700;
+}
+
+:root {
+  --title-face: "Rodger", sans-serif;
+  --body-face: "Proxima Soft", sans-serif;
+}
+
+h1 {
+  font-family: var(--title-face);
+}
+
+body {
+  font-family: var(--body-face);
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.heading-1 {
+  font-size: clamp(72px, 10vw, 140px);
+  line-height: 0.8;
+  text-transform: uppercase;
+  color: var(--title-orange);
+}
+
+.body-copy {
+  font-size: clamp(20px, 1.6vw, 24px);
+  line-height: 1.5;
+  color: var(--gray-800);
+}

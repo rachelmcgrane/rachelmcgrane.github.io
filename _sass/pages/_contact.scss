@@ -1,0 +1,29 @@
+.contact-info {
+  display: grid;
+  grid-column: span 5;
+  grid-template-columns: subgrid;
+  grid-template-rows: min-content;
+
+  @media screen and (max-width: 700px) {
+    grid-column: span 12;
+  }
+}
+
+.contact-info__copy {
+  grid-column: span 5;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media screen and (max-width: 700px) {
+    grid-column: span 12;
+  }
+}
+
+.contact-form {
+  grid-column: 7 / span 6;
+
+  @media screen and (max-width: 700px) {
+    grid-column: span 12;
+  }
+}

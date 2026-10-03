@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div class="page-content">
+  <div class="contact-info">
+    <div class="contact-info__copy">
+      <h1 class="heading-1">Get In Touch</h1>
+      <p class="body-copy">Want to get in touch with me? Send a message with your name and email and I’ll get back to you as soon as I can.</p>
+    </div>
+  </div>
+
+  <div class="contact-form">
+    <form class="form" action="https://api.staticforms.dev/submit" method="POST">
+      <input type="hidden" name="apiKey" value="sf_3b6712a71f15a88392c0db0d" />
+      <input type="hidden" name="replyTo" value="@" />
+      <input type="hidden" name="subject" value="Hello - New Form Submission" />
+
+      <div class="form-field">
+        <label for="name" class="form-field__label">Name</label>
+        <input type="text" class="form-field__input" id="name" name="name" required>
+      </div>
+
+      <div class="form-field">
+        <label for="email" class="form-field__label">Email</label>
+        <input type="email" class="form-field__input" id="email" name="email" required>
+      </div>
+
+      <div class="form-field">
+        <label for="message" class="form-field__label">Message</label>
+        <textarea type="email" class="form-field__textarea" id="message" name="message" required></textarea>
+      </div>
+
+      <input type="text" name="honeypot" tabindex="-1" autocomplete="off" />
+      
+      <button class="button" type="submit">Send Message</button>
+    </form>
+  </div>
+</div>

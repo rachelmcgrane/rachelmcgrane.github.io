@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="page-content">
+  <div class="about-info">
+    <div class="about-info__copy">
+      <h1 class="heading-1">About Me</h1>
+
+      <div class="about-info__copy-paragraphs">
+        {% assign start = "2017-1-1" | date: "%Y" %}
+        {% assign now = "now" | date: "%Y" %}
+        <p class="body-copy">Hey I’m Rachel! I’ve been in the web industry for around {{ now | minus: start }} years and have experience in designing interfaces as well as websites and marketing materials.</p>
+        <p class="body-copy">I love being out in the sun in nature and can nerd out about my favorite TV shows and YouTube channels. I know a little bit of Swedish (though not enough to have a conversation) and love language and linguistics of all sorts.</p>
+      </div> 
+    </div>
+
+    <div class="download-resume">
+      <span class="download-resume__heading">Download my resume:</span>
+      <a class="download-resume__button" href="#">
+        PDF
+        <span class="download-resume__button-icon">
+          {% svg "assets/images/icons/download.svg" %}
+        </span>
+      </a>
+    </div>
+  </div>
+
+  <div class="about-images">
+    <img class="about-images__image about-images__image--pride" src="assets/images/selfie-pride.jpg" alt="Selfie of me surrounded by bubbles from a bubble maker." />
+    <img class="about-images__image about-images__image--waterfall" src="assets/images/selfie-waterfall.jpg" alt="Selfie of me in front of Minnehaha Falls." />
+  </div>
+</div>

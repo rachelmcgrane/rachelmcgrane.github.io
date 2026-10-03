@@ -1,0 +1,16 @@
+.button {
+  height: 48px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--yellow-background);
+  padding: 0 16px;
+  border-radius: 12px;
+  font-family: var(--body-face);
+  font-size: 18px;
+  color: var(--yellow-text);
+  font-weight: 600;
+
+  &:hover {
+    background-color: var(--yellow-background-hover);
+  }
+}

@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background);
+}
+
+.container {
+  max-width: 1320px;
+  margin: 56px auto;
+  padding: 0 20px;
+
+  @media screen and (max-width: 600px) {
+    margin: 32px auto;
+  }
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+p + p {
+  margin-top: 20px;
+}
