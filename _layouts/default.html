@@ -1,23 +1,28 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>
-      {% if page.title %}
+    {% if page.title %}
+      {% capture title %}
         {{ page.title }} &ndash; {{ site.title }}
-      {% else %}
+      {% endcapture %}
+    {% else %}
+      {% capture title %}
         {{ site.title }}
-      {% endif %}
-    </title>
-
+      {% endcapture %}
+    {% endif %}
+    
+    <title>{{ title }}</title>
+    
     <link rel="stylesheet" href="{{ '/assets/stylesheets/main.css' | relative_url }}">
     <link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="{{ '/assets/images/og-image.png' | relative_url }}" />
-    <meta property="og:title" content="Rachel McGrane" />
-    <meta name="description" content="I'm Rachel! I'm a designer and CSS developer from Pittsburgh, PA. I have experience in designing interfaces as well as websites and marketing materials." />
-    <meta name="og:description" content="I'm Rachel! I'm a designer and CSS developer from Pittsburgh, PA. I have experience in designing interfaces as well as websites and marketing materials." />
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:site_name" content="Rachel McGrane" />
+    <meta name="description" content="I’m Rachel! I’m a designer and CSS developer from Pittsburgh, PA." />
+    <meta name="og:description" content="I’m Rachel! ’'m a designer and CSS developer from Pittsburgh, PA." />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:description" content="I'm Rachel! I'm a designer and CSS developer from Pittsburgh, PA. I have experience in designing interfaces as well as websites and marketing materials." />
+    <meta name="twitter:description" content="I’m Rachel! I’m a designer and CSS developer from Pittsburgh, PA." />
   </head>
   <body>
     <div class="container">
