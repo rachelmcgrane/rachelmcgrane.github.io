@@ -28,6 +28,10 @@
   grid-column: span 3;
   margin-top: 24px;
 
+  @media screen and (max-width: 1000px) {
+    grid-column: span 5;
+  }
+
   @media screen and (max-width: 700px) {
     grid-column: span 6;
   }
@@ -84,7 +88,7 @@
 .about-images {
   grid-column: 9 / span 4;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1100px) {
     grid-column: 8 / span 5;
   }
 
