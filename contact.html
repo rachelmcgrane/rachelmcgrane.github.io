@@ -14,7 +14,8 @@ layout: default
     <form class="form" action="https://api.staticforms.dev/submit" method="POST">
       <input type="hidden" name="apiKey" value="sf_3b6712a71f15a88392c0db0d" />
       <input type="hidden" name="replyTo" value="@" />
-      <input type="hidden" name="subject" value="Hello - New Form Submission" />
+      <input type="hidden" name="subject" value="New Form Submission" />
+      <input type="hidden" name="redirectTo" value="{{ site.url }}/thanks" />
 
       <div class="form-field">
         <label for="name" class="form-field__label">Name</label>

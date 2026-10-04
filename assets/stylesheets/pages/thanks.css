@@ -1,0 +1,12 @@
+.thanks-content {
+  margin: 56px 0;
+  text-align: center;
+
+  @media screen and (max-width: 600px) {
+    margin: 40px 0;
+  }
+
+  h1 {
+    margin-bottom: 16px;
+  }
+}
