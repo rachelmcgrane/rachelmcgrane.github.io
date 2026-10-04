@@ -10,6 +10,10 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   margin-bottom: 32px;
+
+  @media screen and (max-width: 600px) {
+    margin-bottom: 16px;
+  }
 }
 
 .project-content__heading {
@@ -21,6 +25,10 @@
   grid-template-columns: 1fr 1fr;
   gap: 24px;
 
+  @media screen and (max-width: 600px) {
+    gap: 8px;
+  }
+
   .project-shot {
     border: 16px solid var(--yellow);
     border-radius: 40px;
@@ -29,6 +37,7 @@
     @media screen and (max-width: 600px) {
       border-width: 8px;
       border-radius: 24px;
+      grid-column: span 2;
     }
   }
 

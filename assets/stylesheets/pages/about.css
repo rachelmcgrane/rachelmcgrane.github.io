@@ -7,6 +7,10 @@
   @media screen and (max-width: 700px) {
     grid-column: span 12;
   }
+
+  @media screen and (max-width: 450px) {
+    grid-column: span 1;
+  }
 }
 
 .about-info__copy {
@@ -17,6 +21,10 @@
 
   @media screen and (max-width: 700px) {
     grid-column: span 12;
+  }
+
+  @media screen and (max-width: 450px) {
+    grid-column: span 1;
   }
 }
 
@@ -40,8 +48,8 @@
     grid-column: span 8;
   }
 
-  @media screen and (max-width: 400px) {
-    grid-column: span 12;
+  @media screen and (max-width: 450px) {
+    grid-column: span 1;
   }
 }
 
@@ -96,8 +104,8 @@
     grid-column: span 12;
   }
 
-  @media screen and (max-width: 400px) {
-    grid-column: span 12;
+  @media screen and (max-width: 450px) {
+    grid-column: span 1;
   }
 }
 
@@ -121,7 +129,7 @@
 .about-images__image--waterfall {
   width: 54%;
   transform: rotate(2deg);
-  justify-self: flex-end;
+  margin-left: auto;
   margin-top: -40%;
   margin-right: 6px;
 

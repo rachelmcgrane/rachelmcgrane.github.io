@@ -12,4 +12,8 @@
   @media screen and (max-width: 600px) {
     margin: 40px 0;
   }
+
+  @media screen and (max-width: 450px) {
+    grid-template-columns: 1fr;
+  }
 }

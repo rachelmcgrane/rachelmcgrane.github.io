@@ -37,7 +37,7 @@ body {
 }
 
 .heading-1 {
-  font-size: clamp(72px, 10vw, 140px);
+  font-size: clamp(min(72px, 15vw), 10vw, 140px);
   line-height: 0.8;
   text-transform: uppercase;
   color: var(--title-orange);
