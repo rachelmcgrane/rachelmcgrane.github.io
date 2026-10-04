@@ -11,9 +11,9 @@
 @import "blocks/page-content.css";
 @import "blocks/form.css";
 @import "blocks/projects.css";
+@import "blocks/centered-content.css";
 
 @import "pages/home.css";
 @import "pages/about.css";
 @import "pages/contact.css";
 @import "pages/project.css";
-@import "pages/thanks.css";
