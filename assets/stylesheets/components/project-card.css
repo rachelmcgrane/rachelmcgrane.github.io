@@ -67,3 +67,9 @@
     border-radius: 20px;
   }
 }
+
+.project-card__image--no-radius {
+  img {
+    border-radius: 0;
+  }
+}

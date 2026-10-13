@@ -10,6 +10,7 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   margin-bottom: 32px;
+  gap: 24px;
 
   @media screen and (max-width: 600px) {
     margin-bottom: 16px;
@@ -18,6 +19,27 @@
 
 .project-content__heading {
   grid-column: span 4;
+
+  @media screen and (max-width: 800px) {
+    grid-column: span 5;
+  }
+
+  @media screen and (max-width: 500px) {
+    grid-column: span 6;
+  }
+}
+
+.project-content__description {
+  grid-column: span 4;
+  grid-row: 2;
+
+  @media screen and (max-width: 800px) {
+    grid-column: span 5;
+  }
+
+  @media screen and (max-width: 500px) {
+    grid-column: span 6;
+  }
 }
 
 .project-shots {
